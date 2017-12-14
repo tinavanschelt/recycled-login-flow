@@ -5,17 +5,13 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 
 import { H1 } from 'components/Heading';
-import messages from './messages';
 
 export default function NotFound() {
   return (
     <article>
-      <H1>
-        <FormattedMessage {...messages.header} />
-      </H1>
+      <H1>Page Not Found</H1>
     </article>
   );
 }
