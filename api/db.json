@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jona",
+      "username": "Jona",
+      "email": "jona@example.com",
+      "password": "$2a$10$44Z/GfUbPc.iYrb3k4C11u4X09wyjzj9hRN5bHzzx3Rm2he5dWjmu"
+    },
+    {
+      "id": 2,
+      "name": "Daniel",
+      "username": "Daniel",
+      "email": "daniel@example.com",
+      "password": "$2a$10$lNguK/NdoH0yzcsWRWxtfeaW82P3Pau7e4C.ZLEza2aElkxdlk0le"
+    },
+  ]
+}
