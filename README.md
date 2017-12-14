@@ -14,20 +14,20 @@ The json-server does not refresh automatically after posting, so in dev we just 
 
 You'll find most of the ins-and-outs in the [react-boilerplate docs](https://github.com/react-boilerplate/react-boilerplate/tree/master/docs), but here's a brief overview of some modifications that were made.
 
-##### Fake REST API
+#### Fake REST API
 User data and hashes are stored in /api/db.json and json-server is setup to start up with the app. After running _yarn start_ successfully, you should see your data when you go to [http://localhost:3000/api/users](http://localhost:3000/api/users).
 
 The json-server setup can be found in server/index.js (require json-server and specify /api, line #14).
 
-##### General
+#### General
 * App-level sagas (see [#1518](https://github.com/react-boilerplate/react-boilerplate/issues/1518) and [#1545](https://github.com/react-boilerplate/react-boilerplate/issues/1545)
 * Images / static files served from the /assets/ folder (line #15 in /app.js)
 * Removed intl / react-intl
 
-##### Styling
-* Global variables in /components/Variables/index.js, import as needed</li>
-* CSS Grid System (needs some TLC)</li>
+#### Styling
+* Global variables in /components/Variables/index.js, import as needed
+* CSS Grid System (needs some TLC)
 
 ### Todo
-* Tests
+* Write tests
 * Add some documentation for the inputs
