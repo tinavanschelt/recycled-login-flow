@@ -5,6 +5,8 @@ This application demonstrates what a React-based register/login workflow might l
 
 It's based on a combination of [login-flow](https://github.com/mxstbr/login-flow) by [Max Stoiber](https://mxstbr.com/) (creator of the much loved [styled-components](https://github.com/styled-components/styled-components) and co-founder of [spectrum.chat](https://spectrum.chat)) and [saga-login-flow](https://github.com/sotojuan/saga-login-flow) by [Juan Soto](https://juansoto.me/) (also based on [login-flow](https://github.com/mxstbr/login-flow)).
 
+There are two default users Jona (password: whale) and Daniel (password: lion) or you could just "signup".
+
 ### Authentication Flow
 The App/sagas.js file watches for the login / signup action to be dispatched by the login / signup form. The auth method (in js/utils/auth.js) is then called for authentication. Auth.js uses fakeRequest.js and fakeServer.js. fakeRequest is a fake XMLHttpRequest wrapper with a similar syntax to request.js. (FYI in [login-flow](https://github.com/mxstbr/login-flow) it simulates network latency.) fakeServer responds to the fake HTTP requests and pretends to be a real server, posting the current users to http://localhost:3000/api/users with the passwords encrypted using bcrypt.
 
