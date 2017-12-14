@@ -3,6 +3,7 @@
 !/.travis.yml
 !/.gitignore
 !/.htaccess
+!/app/.htaccess
 coverage
 build
 node_modules
