@@ -1,11 +1,13 @@
 # Don't check auto-generated stuff into git
 .*
+!/.travis.yml
 !/.gitignore
 !/.htaccess
 coverage
 build
 node_modules
 stats.json
+package-lock.json
 
 # Cruft
 .DS_Store
