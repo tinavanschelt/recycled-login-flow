@@ -44,7 +44,7 @@ The json-server setup can be found in server/index.js (require json-server and s
 
 ## Deployment
 
-Follow the react-boileplate [instructions](https://github.com/react-boilerplate/react-boilerplate/blob/master/docs/general/deployment.md).
+Check the [instructions](https://github.com/react-boilerplate/react-boilerplate/blob/master/docs/general/deployment.md) in the react-boilerplate docs.
 
 ## Todo
 * Write tests
