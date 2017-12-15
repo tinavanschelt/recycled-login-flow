@@ -40,6 +40,8 @@ The json-server setup can be found in server/index.js (require json-server and s
 
 4. Go to `http://localhost:3000` and you should see the app running! (The api data is at `http://localhost:3000/api/users`)
 
+(If you are running into strange undefined error, just make sure the requestURL in fakeServer.js is set to localhost.)
+
 ## Deployment
 
 Follow the react-boileplate [instructions](https://github.com/react-boilerplate/react-boilerplate/blob/master/docs/general/deployment.md).

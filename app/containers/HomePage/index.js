@@ -16,7 +16,7 @@ export class HomePage extends Component { // eslint-disable-line react/prefer-st
         <H2 bold>Hi!</H2>
         <p>This application demonstrates what a React-based register/login workflow might look like built with <A href="https://github.com/react-boilerplate/react-boilerplate">react-boilerplate v3.4.0</A>, <A href="https://github.com/styled-components/styled-components">styled-components</A>, <A href="https://github.com/reactjs/redux">redux</A>, <A href="https://github.com/redux-saga/redux-saga">redux-saga</A> and <A href="https://github.com/typicode/json-server">json-server</A>.</p>
         <p>It is based on a combination of <A href="https://github.com/mxstbr/login-flow">login-flow</A> by <A href="https://mxstbr.com/">Max Stoiber</A> (creator of the much loved <A href="https://github.com/styled-components/styled-components">styled-components</A> and co-founder of <A href="https://spectrum.chat/">https://spectrum.chat/</A>) and <A href="https://github.com/sotojuan/saga-login-flow">saga-login-flow</A> by <A href="https://juansoto.me/">Juan Soto</A> (also based on <A href="https://github.com/mxstbr/login-flow">login-flow</A>).</p>
-        <p>You can find the code for this app on github: <A href="https://github.com/tinavanschelt/recycled-login-flow">recycled-login-flow</A>
+        <p>You can find the code for this app on github: <A href="https://github.com/tinavanschelt/recycled-login-flow">recycled-login-flow</A></p>
 
         <H3 margin="1em 0 0">Authentication Flow</H3>
         <p>The App/sagas.js file watches for the login / signup action to be dispatched by the login / signup form. The auth method (in js/utils/auth.js) is then called for authentication. Auth.js uses fakeRequest.js and fakeServer.js. fakeRequest is a fake XMLHttpRequest wrapper with a similar syntax to request.js. (FYI in the original <A href="https://github.com/mxstbr/login-flow">login-flow</A> by <A href="https://mxstbr.com/">Max Stoiber</A> it simulates network latency.) fakeServer responds to the fake HTTP requests and pretends to be a real server, posting the current users to localhost:3000/api/users with the passwords encrypted using bcrypt.</p>
@@ -40,6 +40,20 @@ export class HomePage extends Component { // eslint-disable-line react/prefer-st
           <li>Global variables in /components/Variables/index.js, import as needed</li>
           <li>CSS Grid System (needs some TLC)</li>
         </ul>
+
+        <H3 margin="1em 0 0">Getting Started</H3>
+
+        <ol>
+          <li>Clone / download this repo</li>
+          <li>Run `yarn install` to install the dependencies.</li>
+          <li>Run `yarn start` to start the local web server.</li>
+          <li>Go to http://localhost:3000 and you should see the app running! (The api data is at http://localhost:3000/api/users)</li>
+          <li>If you are running into strange undefined error, just make sure the requestURL in fakeServer.js is set to localhost.</li>
+        </ol>
+
+        <H3 margin="1em 0 0">Deployment</H3>
+
+        Follow the react-boileplate <A href="https://github.com/react-boilerplate/react-boilerplate/blob/master/docs/general/deployment.md">instructions</A>.
 
         <H3 margin="1em 0 0">Todo</H3>
         <ul>
