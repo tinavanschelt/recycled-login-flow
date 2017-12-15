@@ -2,6 +2,7 @@
 .*
 !/.travis.yml
 !/.gitignore
+!/.slugignore
 !/.htaccess
 !/app/.htaccess
 coverage
