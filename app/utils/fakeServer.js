@@ -5,7 +5,7 @@ import request from './request';
 let users;
 const salt = genSaltSync(10);
 const localStorage = global.window.localStorage; // for webpack approval
-const requestURL = 'http://localhost:3000/api/users';
+const requestURL = 'http://recycled-login-flow.herokuapp.com/api/users';
 
 // Fake remote server, using bcrypt and localStorage to persist data across page§
 const server = {
