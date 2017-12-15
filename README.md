@@ -5,7 +5,7 @@ This application demonstrates what a React-based register/login workflow might l
 
 It's based on a combination of [login-flow](https://github.com/mxstbr/login-flow) by [Max Stoiber](https://mxstbr.com/) (creator of the much loved [styled-components](https://github.com/styled-components/styled-components) and co-founder of [spectrum.chat](https://spectrum.chat)) and [saga-login-flow](https://github.com/sotojuan/saga-login-flow) by [Juan Soto](https://juansoto.me/) (also based on [login-flow](https://github.com/mxstbr/login-flow)).
 
-There are two default users Jona (password: whale) and Daniel (password: lion) or you could just "signup".
+There are two default users (password in brackets) are `Jona (whale) and `Daniel (lion)` or you could just "signup".
 
 ### Authentication Flow
 The App/sagas.js file watches for the login / signup action to be dispatched by the login / signup form. The auth method (in js/utils/auth.js) is then called for authentication. Auth.js uses fakeRequest.js and fakeServer.js. fakeRequest is a fake XMLHttpRequest wrapper with a similar syntax to request.js. (FYI in [login-flow](https://github.com/mxstbr/login-flow) it simulates network latency.) fakeServer responds to the fake HTTP requests and pretends to be a real server, posting the current users to http://localhost:3000/api/users with the passwords encrypted using bcrypt.
@@ -29,6 +29,16 @@ The json-server setup can be found in server/index.js (require json-server and s
 #### Styling
 * Global variables in /components/Variables/index.js, import as needed
 * CSS Grid System (needs some TLC)
+
+## Getting started
+
+1. Clone / download this repo
+
+2. Run `yarn install` to install the dependencies.
+
+3. Run `yarn start` to start the local web server.
+
+4. Go to `http://localhost:3000` and you should see the app running! (The api data is at `http://localhost:3000/api/users`)
 
 ### Todo
 * Write tests
