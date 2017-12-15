@@ -40,6 +40,10 @@ The json-server setup can be found in server/index.js (require json-server and s
 
 4. Go to `http://localhost:3000` and you should see the app running! (The api data is at `http://localhost:3000/api/users`)
 
+## Deployment
+
+Follow the react-boileplate [instructions](https://github.com/react-boilerplate/react-boilerplate/blob/master/docs/general/deployment.md).
+
 ### Todo
 * Write tests
 * Add some documentation for the inputs
